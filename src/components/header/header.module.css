@@ -1,0 +1,56 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  height: 98px;
+  margin: 0 auto;
+}
+
+.wrapper nav {
+  display: flex;
+  margin: 0 auto;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  height: 98px;
+  max-width: 1220px;
+  box-shadow: inset -1px 0px 10px 0px gray;
+  border-radius: 20px;
+}
+.logo {
+  padding-left: 40px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: rgb(255, 255, 255);
+}
+.basket {
+  padding-right: 40px;
+}
+
+.wrapper ul {
+  display: flex;
+  gap: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.wrapper li {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+.active {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  border-bottom: solid 2px #ffffff;
+}

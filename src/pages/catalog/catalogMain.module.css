@@ -1,0 +1,18 @@
+.wrapperCatalog {
+  background-image: url("https://catherineasquithgallery.com/uploads/posts/2021-02/1612188510_187-p-fioletovii-fon-podsvetka-214.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.barFilter {
+  width: 1220px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}

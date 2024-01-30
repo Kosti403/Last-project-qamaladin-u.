@@ -1,0 +1,57 @@
+.containerCategory {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding-top: 50px;
+}
+
+.categoryWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1220px;
+  justify-content: space-between;
+  gap: 15px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.CardContainer {
+  width: 210px;
+  height: 240px;
+  box-shadow: -1px 0px 12px 12px hsla(0, 0%, 0%, 0.3);
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.CardContainer:hover {
+  box-shadow: -1px 0px 10px 10px rgba(246, 18, 117, 0.5);
+}
+
+.li {
+  list-style: none;
+  box-shadow: inset -1px 0px 10px 0px rgb(255, 255, 252);
+  text-align: center;
+  text-decoration: none;
+  width: 150px;
+}
+
+li:hover {
+  text-decoration: none;
+}
+
+.name {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: 400;
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+.name:hover {
+  color: rgb(255, 63, 146);
+}

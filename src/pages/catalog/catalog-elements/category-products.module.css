@@ -1,0 +1,36 @@
+.categoryProducts {
+  width: 800px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 80px;
+}
+.category_wrapper {
+  width: 1220px;
+  margin: 0 auto;
+}
+
+.cardProduct {
+  width: 210px;
+  height: 240px;
+  box-shadow: -1px 0px 12px 12px hsla(0, 0%, 0%, 0.3);
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.cardProduct:hover {
+  box-shadow: -1px 0px 10px 10px rgba(246, 18, 117, 0.5);
+}
+
+.titlePrice {
+  color: whitesmoke;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+}

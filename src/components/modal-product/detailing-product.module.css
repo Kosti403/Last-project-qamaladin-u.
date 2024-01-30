@@ -1,0 +1,86 @@
+.ModalWrapper {
+  background-image: url("https://catherineasquithgallery.com/uploads/posts/2021-02/1612188510_187-p-fioletovii-fon-podsvetka-214.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.containerProduct {
+  max-width: 1220px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  margin-top: 30px;
+}
+
+.titlePrice {
+  text-decoration: none;
+  list-style: none;
+  color: rgb(255, 255, 255);
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.cardProduct {
+  width: 550px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.title {
+  width: 500px;
+  height: 600px;
+}
+
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modalContent {
+  position: relative;
+  background-color: #fefefe;
+  padding: 25px;
+  border-radius: 8px;
+  width: 500px;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.clickForMe {
+  color: rgb(255, 255, 255);
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.productTitle {
+  color: rgb(255, 121, 121);
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  text-align: center;
+}

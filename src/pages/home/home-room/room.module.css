@@ -1,0 +1,14 @@
+.wrapperRoom {
+  width: 1120px;
+  height: 600px;
+  margin: 0 auto;
+  display: flex;
+  padding-top: 20px;
+  background-image: url("https://shapka-youtube.ru/wp-content/uploads/2023/01/avatarka-magazin-odezhdy.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}

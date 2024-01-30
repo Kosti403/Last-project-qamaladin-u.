@@ -1,0 +1,22 @@
+.firstSeparation {
+  width: 450px;
+  border-right: solid 3px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 820px;
+}
+
+.faceImg {
+  margin-top: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  width: 210px;
+  height: 210px;
+}
+
+.faceImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
