@@ -1,0 +1,77 @@
+.containerAbout {
+  background-image: url("https://catherineasquithgallery.com/uploads/posts/2021-02/1612188510_187-p-fioletovii-fon-podsvetka-214.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.WrapperAbout {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 40px;
+
+  backdrop-filter: blur(3px);
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+
+.general .basic .structure .info {
+  flex: 1;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.general h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #fffefe;
+  font-family: "Helvetica Neue", sans-serif;
+}
+.basic h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #fffefe;
+  font-family: "Helvetica Neue", sans-serif;
+}
+.structure h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #fffefe;
+  font-family: "Helvetica Neue", sans-serif;
+}
+.info h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #fdfdfd;
+  font-family: "Helvetica Neue", sans-serif;
+}
+
+.structure p {
+  font-size: 16px;
+  color: #f2eeee;
+  line-height: 1.5;
+  font-family: "Arial", sans-serif;
+}
+.general p {
+  font-size: 16px;
+  color: #f2eeee;
+  line-height: 1.5;
+  font-family: "Arial", sans-serif;
+}
+.info p {
+  font-size: 16px;
+  color: #f2eeee;
+  line-height: 1.5;
+  font-family: "Arial", sans-serif;
+}
+.basic p {
+  font-size: 16px;
+  color: #f2eeee;
+  line-height: 1.5;
+  font-family: "Arial", sans-serif;
+}

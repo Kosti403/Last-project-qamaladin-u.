@@ -1,5 +1,5 @@
-.containerUsers {
-  background-image: url("/src/img/loft-background.jpg");
+.aboutBackground {
+  background-image: url("https://catherineasquithgallery.com/uploads/posts/2021-02/1612188510_187-p-fioletovii-fon-podsvetka-214.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   -webkit-background-size: cover;
@@ -8,24 +8,11 @@
   background-size: cover;
   background-attachment: fixed;
 }
-
-.basketWrapper {
-  display: flex;
-  width: 1220px;
+.aboutWrapper {
+  width: 100%;
+  max-width: 1120px;
   margin: 0 auto;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 30px;
-  margin-top: 30px;
-}
-
-.CardContainer {
-  width: 300px;
-  margin: 0 auto;
+  box-shadow: -1px 0px 10px 10px hsla(0, 0%, 0%, 0.401);
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 20px;
-  flex-direction: column-reverse;
-  align-items: center;
+  margin-top: 40px;
 }

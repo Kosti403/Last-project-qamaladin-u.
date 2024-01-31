@@ -1,4 +1,3 @@
-
 import React, { useEffect } from "react";
 import { Catalogs } from "../../../entities/entities-catalog";
 import { getProductsByCategoryAndFilter } from "../../../Api/get-product-by-category-filter";
@@ -46,14 +45,20 @@ const CatalogProducts: React.FC<CatalogProductsProps> = ({ searchedValue }) => {
             <NavLink to={`/product/${product.id}`}>
               <img
                 src={product.images[2]}
-                style={{ width: "180px", height: "150px" }}
+                style={{ width: "180px", height: "160px" }}
                 alt=""
               />
               <p className={styles.titlePrice}>{product.title}</p>
-              <p className={styles.titlePrice}>${product.price}</p>
             </NavLink>
-            <div className={styles.cartControls}>
-              <button onClick={() => addToCart(product)}>Add to Cart</button>
+            <div
+              className={styles.cartControls}
+              style={{ display: "flex", gap: "30px" }}
+            >
+              <p className={styles.titlePrice}>${product.price}</p>
+              <button onClick={() => addToCart(product)}>
+                {" "}
+                <p> Add to Cart</p>
+              </button>
             </div>
           </div>
         ))}

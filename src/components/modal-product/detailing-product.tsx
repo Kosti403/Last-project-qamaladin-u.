@@ -11,14 +11,16 @@ import styles from "./detailing-product.module.css";
 export default function DetailingProduct() {
   const { productId } = useParams<{ productId: string }>();
   const [product, setProduct] = useState<Catalogs>();
+  const [selectedImage, setSelectedImage] = useState<string>("");
 
   useEffect(() => {
     const fetchProductModal = async (productId: string) => {
       try {
         const response = await GetProduct(productId);
         setProduct(response);
+        setSelectedImage(response?.images[0]); 
       } catch (error) {
-        console.error("Failed to fetch products by category", error);
+        console.error("Failed to fetch product details", error);
       }
     };
 
@@ -27,33 +29,41 @@ export default function DetailingProduct() {
     }
   }, [productId]);
 
+  const handleImageClick = (imageUrl: string) => {
+    setSelectedImage(imageUrl);
+  };
+
   return (
     <>
       <div className={styles.ModalWrapper}>
         <Header />
         <div className={styles.containerProduct}>
-          <div key={product?.id} className={styles.cardProduct}>
-            {[0, 1, 2].map((index) => (
+          <div className={styles.cardProduct}>
+            {product?.images.slice(0, 3).map((image, index) => (
               <img
                 key={index}
-                src={product?.images[index]}
+                src={image}
                 style={{ width: "110px", height: "110px" }}
-                alt=""
+                alt={`product-preview-${index}`}
+                onClick={() => handleImageClick(image)}
               />
             ))}
           </div>
+          <div className={styles.bigImageContainer}>
+            {selectedImage && (
+              <img
+                src={selectedImage}
+                alt="Selected"
+                style={{ width: "300px", height: "300px" }}
+              />
+            )}
+          </div>
           <div className={styles.title}>
+            <p className={styles.titlePrice}>{product?.title}</p>
             <p style={{ color: "white", fontSize: "20px" }}>
               {product?.category.name}
             </p>
-            {/* <img
-              key={index}
-              src={product?.images[index.[1]]}
-              alt=""
-              style={{ width: "40px", height: "40px" }}
-            /> */}
-            <p className={styles.titlePrice}>{product?.title}</p>
-            <p className={styles.titlePrice}> {product?.description}</p>
+            <p className={styles.titlePrice}>{product?.description}</p>
             <p className={styles.titlePrice}>${product?.price}</p>
           </div>
         </div>

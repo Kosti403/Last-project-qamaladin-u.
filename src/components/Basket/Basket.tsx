@@ -21,14 +21,19 @@ const Baskets: React.FC = () => {
         <div className={styles.tagInformation}>
           <p>Name Product</p>
           <p>Price</p>
-          <p>QUANTITY</p>
+          <p style={{ opacity: "0" }}>QUANTITY</p>
         </div>
         {cart.map((product: CartItem) => (
           <div key={product.id} className={styles.cartItem}>
-            <p>{product.title}</p>
+            <p style={{ width: "140px" }}>{product.title}</p>
             <p>${product.price}</p>
             <div className={styles.cartControls}>
-              <button onClick={() => removeFromCart(product.id)}>Remove</button>
+              <button
+                style={{ color: "blue" }}
+                onClick={() => removeFromCart(product.id)}
+              >
+                <p> Remove </p>
+              </button>
             </div>
           </div>
         ))}

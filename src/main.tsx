@@ -4,12 +4,13 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./pages/home/Home.tsx";
 import Catalog from "./pages/catalog/catalog-page.tsx";
 import ErrorPage from "./components/error/touch src/error-page.tsx";
-import About from "./pages/about/about.tsx";
-import Contact from "./pages/contact/contact.tsx";
+
 import Baskets from "./components/Basket/Basket.tsx";
 import ModalProduct from "./components/modal-product/detailing-product.tsx";
 import { CartProvider } from "./components/hooks/cart-context.tsx";
-
+import "./main.css";
+import About from "./pages/aboutt/about.tsx";
+import Contact from "./pages/contact/contact.tsx";
 const router = createBrowserRouter([
   {
     path: "/",

@@ -13,7 +13,7 @@
 
 .cardProduct {
   width: 210px;
-  height: 240px;
+  height: 260px;
   box-shadow: -1px 0px 12px 12px hsla(0, 0%, 0%, 0.3);
   display: flex;
   flex-wrap: wrap;
@@ -31,6 +31,39 @@
   color: whitesmoke;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
-    font-weight: 700;
-    font-size: 14px;
+  font-weight: 700;
+  font-size: 14px;
+}
+.zoomedImageContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000; /* Ensure it's above other elements */
+}
+
+.zoomedImage {
+  max-width: 80%;
+  max-height: 80%;
+  border: 2px solid white;
+}
+.cartControls button {
+  box-shadow: inset 0 1px 1px rgba(111, 55, 125, 0.8),
+    inset 0 -1px 0px rgba(63, 59, 113, 0.2), 0 9px 16px 0 rgba(0, 0, 0, 0.3),
+    0 4px 3px 0 rgba(0, 0, 0, 0.3), 0 0 0 1px #150a1e;
+  background-image: linear-gradient(#0d1d66, #7700ff);
+  text-shadow: 0 0 21px rgba(223, 206, 228, 0.5), 0 -1px 0 #311d47;
+}
+
+.cartControls p {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  color: whitesmoke;
 }

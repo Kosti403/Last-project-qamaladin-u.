@@ -1,4 +1,4 @@
-h2 {
+/* h2 {
   font-size: 1rem;
   font-family: var(--font-title);
   color: var(--white);
@@ -10,7 +10,7 @@ p {
   font-size: 0.9rem;
   line-height: 1.5;
   color: var(--white);
-}
+} */
 
 .flow > * + * {
   margin-top: var(--flow-space, 1em);
@@ -28,6 +28,7 @@ p {
 .heading {
   text-align: center;
   padding-bottom: 40px;
+  color: #ffeaea;
 }
 .wrapperCard {
   padding-top: 50px;

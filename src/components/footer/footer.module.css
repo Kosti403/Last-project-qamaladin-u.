@@ -18,9 +18,15 @@
   margin-right: 20px;
 }
 
-.footer li,
-h3,
-h1 {
+.footer li {
+  list-style: none;
+  color: antiquewhite;
+}
+.footer h3 {
+  list-style: none;
+  color: antiquewhite;
+}
+.footer h1 {
   list-style: none;
   color: antiquewhite;
 }
